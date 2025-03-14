@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    src: url(MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].woff2) format('woff2');
+  }
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+
+.size-40{
+    font-size: 40px;
+    font-variation-settings: 'OPSZ' 40;
+}
+.size-32{
+    font-size: 32px;
+    font-variation-settings: 'OPSZ' 32;
+}
+.size-28{
+    font-size: 28px;
+    font-variation-settings: 'OPSZ' 28;
+}
+.size-20{
+    font-size: 20px;
+    font-variation-settings: 'OPSZ' 20;
+}
+.size-18{
+    font-size: 18px;
+    font-variation-settings: 'OPSZ' 18;
+}
+.size-16{
+    font-size: 16px;
+    font-variation-settings: 'OPSZ' 16;
+}
+
+.size-14{
+    font-size: 14px;
+    font-variation-settings: 'OPSZ' 14;
+}
+
+.size-12{
+    font-size: 12px;
+    font-variation-settings: 'OPSZ' 12;
+}
