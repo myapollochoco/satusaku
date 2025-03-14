@@ -1,0 +1,53 @@
+// @use '../util/' as u;
+@use 'color' as *;
+@use 'typography' as *;
+@use 'spaces' as *;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $textcolor;
+
+}
+
+button {
+    cursor: pointer;
+    // padding: $s4 $s8;
+}
+
+button, input {
+    padding: $s4 $s8;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    font-family: $font_main;
+}
+
+body{
+    // margin: 20px;
+    padding: 0;
+    letter-spacing: -.5px;
+    font-family: $font_main;
+    font-optical-sizing: auto;
+    // background-color: $bg_thin_blue;
+    background-color: hsl(0, 0%, 99%);
+    font-size: $body_reg;
+    font-weight: 400;
+    line-height: 1;
+    overflow-x: hidden;
+    color: $base_reverse;
+}

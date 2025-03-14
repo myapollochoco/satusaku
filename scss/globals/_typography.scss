@@ -1,0 +1,80 @@
+@use 'color' as *;
+@use 'spaces' as *;
+@use 'breakpoints' as *;
+
+$font_main: "Inter", sans-serif;
+
+//TYPE SCALE
+$body_tin: .75rem; //12px
+$body_med: .875rem; //14px
+$body_reg: 1rem;
+$body_big: 1.125rem; //18px
+$heading_third: 1.5rem; //15px
+$heading_third_mobile: 1rem; //15px
+$heading_second: 2.5rem; //18px
+$heading_second_mobile: 1.75rem; //18px
+$heading_first: 4rem; //40px
+$heading_first_mobile: 2.5rem; //40px
+
+//HEADINGS
+h1{
+    font-size: $heading_first;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    font-weight: 500;
+    text-transform: capitalize;
+    // color: $textcolor;
+    background: linear-gradient(29deg, $base_reverse 25%, $accent1 100%);
+    // linear-gradient(1deg, rgb(22, 74, 101) 0%, rgb(80, 138, 146) 76%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include breakpoint-down(mobile){
+        font-size: $heading_first_mobile;
+        line-height: 1.35;
+    }
+
+    span {
+        color: $textcolor_secondary;
+    }
+}
+
+h2{
+    font-size: $heading_second;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: $textcolor;
+    font-weight: 500;
+
+    @include breakpoint-down(mobile){
+        font-size: $heading_second_mobile;
+        line-height: 1.25;
+    }
+
+    span {
+        color: $textcolor_secondary;
+    }
+}
+
+.text_sec {
+    color: $textcolor_secondary;
+}
+
+h3{
+    font-size: $heading_third;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: $textcolor;
+    font-weight: 500;
+
+    @include breakpoint-down(mobile){
+        font-size: $heading_third_mobile;
+        letter-spacing: -0.16px;
+    }
+
+    span {
+        color: $textcolor_secondary;
+    }
+}
+

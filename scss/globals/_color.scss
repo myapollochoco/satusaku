@@ -1,0 +1,48 @@
+//colors variable
+//learn scss color function
+
+//action
+$accent1: hsl(240, 95%, 40%);
+$accent1_shade: hsla(240, 95%, 40%, 0.20);
+$accent2: hsl(199, 90%, 66%);
+$accent3: hsl(21, 90%, 66%);
+$accent3_shade: hsl(21, 92%, 80%);
+$accent4: hsl(182, 61%, 49%);
+$accent1_darker1: hsl(240, 88%, 24%);
+$accent1_bg1: hsl(185, 65%, 92%);
+
+//base
+$base: hsl(0, 0%, 100%);
+$base_blur: rgba(255, 255, 255, 0.5);
+$base_trans: rgba(255, 255, 255, 0);
+$base_reverse: hsl(239, 79%, 24%);
+// $base_reverse: hsl(185, 79%, 24%);
+$base_reverse_half: hsl(209, 17%, 69%);
+$base_reverse_thin: hsla(185, 79%, 24%, 0.08);
+$base_reverse_thinmore: hsla(185, 79%, 24%, 0.04);
+$base_reverse_thin2: hsla(185, 79%, 24%, 0.12);
+$base_reverse_thin3: hsla(185, 79%, 24%, 0.24);
+$base_reverse_thin4: hsla(185, 79%, 24%, 0.36);
+
+//sign
+$green: rgb(9, 226, 125);
+
+//background
+$bg_thin_blue: hsl(190, 55%, 94%);
+
+//text
+$textcolor: $base_reverse;
+// $textcolor_secondary: hsl(205, 19%, 63%);
+$textcolor_secondary: hsl(205, 15%, 61%);
+$textcolor_tertiary: hsl(206, 14%, 70%);
+
+//border
+$border1: 1px solid $base_reverse_thin2;
+
+//box-shadow
+$box_shadow_1:  0px 1px 2px $base_reverse_thin2;
+$box_shadow_2:  0px 2px 4px $base_reverse_thin2;
+$box_shadow_3:  0px 4px 4px 0px hsl(185deg 79% 24% / 8%), 
+                0px 10px 20px 0px hsl(185deg 79% 24% / 8%), 
+                0px 0px 0px 1px hsl(185deg 79% 24% / 8%)
+                ;

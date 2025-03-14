@@ -1,0 +1,31 @@
+@use 'functions' as *;
+
+// Mobile(base, not needed a map): 700px | tablets: 700-900px | Desktop: 900-1440px | wide: 1440px-~
+
+//SASS MAP min-width
+$breakpoints-up: (
+    "tablet": em(428),
+    "desktop": em(1025),
+    "wide": em(1440),
+);
+//SASS MAP max-width
+$breakpoints-down: (
+    // "mobile": 43.74em,
+    "mobile": 26.75em,
+    // "tablet": 56.24em,
+    "tablet": 64.0625em,
+    "desktop": 89.99em,
+);
+
+//mixin min-width
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+//mixin max-width
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
