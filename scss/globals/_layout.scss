@@ -1138,6 +1138,11 @@ header {
         color: $textcolor_secondary;
         grid-area: cr;
     }
+    .social {
+        margin-top: 1rem;
+        color: $textcolor_secondary;
+        grid-area: social;
+    }
 
 }
 //footer end
