@@ -1143,6 +1143,11 @@ header .header_wrap .top_action .toggle_naked {
   color: hsl(205deg, 15%, 61%);
   grid-area: cr;
 }
+.footer .social {
+  margin-top: 1rem;
+  color: hsl(205deg, 15%, 61%);
+  grid-area: social;
+}
 
 .hamburger {
   display: none;
